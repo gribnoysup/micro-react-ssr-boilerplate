@@ -50,7 +50,7 @@ const crateTemplate = (markup = '') => `
 
 module.exports = (req, res) => {
   composeMiddleware(devMiddleware, hotMiddleware)((req, res) => {
-    const app = require('../.build/server.js');
-    send(res, 200, crateTemplate());
+    const { html } = require('../.build/server.js');
+    send(res, 200, crateTemplate(html));
   })(req, res);
 };
