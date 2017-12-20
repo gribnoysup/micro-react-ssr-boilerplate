@@ -1,0 +1,25 @@
+{
+  "name": "micro-dev-test",
+  "version": "1.0.0",
+  "main": "server/index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "NODE_ENV=development micro-dev --ignore=\"(client|.build)\""
+  },
+  "devDependencies": {
+    "micro": "^9.0.2",
+    "micro-dev": "^2.1.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "webpack": "^3.10.0",
+    "webpack-dev-middleware": "^2.0.2",
+    "webpack-hot-middleware": "^2.21.0"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "write-file-webpack-plugin": "^4.2.0"
+  }
+}
